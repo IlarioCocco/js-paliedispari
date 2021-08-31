@@ -2,29 +2,31 @@
 // 1 esercizio
 
 
-// Creare una funzione per capire se la parola inserita è palindroma:  1
-function IsPalindrome(parola) {
-    var parolaInversa = "";
-    for ( var i = parola.length -1; i >= 0; i--){
-        parolaInversa += parola[i]
-    }
-   return parolaInversa;
+// 1 Creare una funzione per capire se la parola inserita è palindroma:  1
+function stringaInversa(parola) {
+var parolaInversa = "";
+for ( var i = parola.length -1; i >= 0; i--){
+    parolaInversa += parola[i]
+}
+    return parolaInversa;
 }
 
 
-// Chiedere all’utente di inserire una parola:  2
+
+// 2 Chiedere all’utente di inserire una parola:  
 var word = prompt("inserisci una Parola")
-console.log(IsPalindrome(word));
+console.log(stringaInversa(word));
+
 
 
 
 // 3 punto 
-if (word == IsPalindrome(word)) {
-    alert("sono Palindrome")
+if (word == stringaInversa(word)) {
+    alert("è una stringaInversa")
 }
-else {
-    alert("non sono Palindrome")
 
+else {
+    alert("non è una stringaInversa")
 }
 
 
