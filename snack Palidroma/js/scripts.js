@@ -5,7 +5,7 @@
 // 1 Creare una funzione per capire se la parola inserita è palindroma:  1
 function stringaInversa(parola) {
 var parolaInversa = "";
-for ( var i = parola.length -1; i >= 0; i--){
+    for ( var i = parola.length -1; i >= 0; i--){
     parolaInversa += parola[i]
 }
     return parolaInversa;
@@ -19,14 +19,12 @@ console.log(stringaInversa(word));
 
 
 
-
 // 3 punto 
 if (word == stringaInversa(word)) {
-    alert("è una stringaInversa")
+    alert("è una stringa Inversa")
 }
-
-else {
-    alert("non è una stringaInversa")
+    else {
+    alert("non è una stringa Inversa")
 }
 
 
