@@ -4,19 +4,16 @@
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 // 2 promt per scgliere se pari o dispari 
 // 2a inseerimnento numero da 1 a 5
-var numeriPari = prompt("inserisci numero pari")
-for ( var i = 0; i < 6; i++){
-    if (i % 2 == 0) {
-    console.log("numeri pari :" + " " + i);
-}
-}
+var numeriPari = parseInt(prompt("inserisci numero"));
+console.log("numero :" + " " + numeriPari);
 
-var numeriPari = prompt("inserisci numero pari")
-for (var i = 0; i < 6; i++) {
-    if (i % 2 == 1) {
-        console.log("numeri dispari :" + " " + i);
-    }
-}
+
+// var numeriDispari = prompt("inserisci numero dispari")
+// for (var i = 0; i < 6; i++) {
+//     if (i % 2 == 1) {
+//         console.log("numeri dispari :" + " " + i);
+//     }
+// }
 
 
 // Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
@@ -28,7 +25,8 @@ console.log("numeri cpu :" + " " + numeroCpuRandomico);
 
 // Sommiamo i due numeri
 // somma dei numeri
-
+var somma = numeriPari + numeroCpuRandomico;
+console.log(somma);
 
 
 // Stabiliamo se la somma dei due numeri è pari o dispari(usando una funzione)
