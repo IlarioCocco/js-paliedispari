@@ -5,7 +5,7 @@
 // 2 promt per scgliere se pari o dispari 
 // 2a inseerimnento numero da 1 a 5
 var numeriPari = parseInt(prompt("inserisci numero"));
-console.log("numero :" + " " + numeriPari);
+console.log("numero utente :" + " " + numeriPari);
 
 
 // var numeriDispari = prompt("inserisci numero dispari")
@@ -19,7 +19,7 @@ console.log("numero :" + " " + numeriPari);
 // Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
 // getSelection. numero randomico da 1 a 5
 var numeroCpuRandomico = Math.floor(Math.random() * 5) + 1;
-console.log("numeri cpu :" + " " + numeroCpuRandomico);
+console.log("numero cpu :" + " " + numeroCpuRandomico);
 
 
 
@@ -30,6 +30,20 @@ console.log(somma);
 
 
 // Stabiliamo se la somma dei due numeri è pari o dispari(usando una funzione)
+var sommaPariDispari;
+if (somma % 2 == 0) {
+    // il numero è pari
+    sommaPariDispari = "pari";
+    console.log("la somma e pari")
+
+} else {
+    // dispari
+    sommaPariDispari = "dispari";
+    console.log("la somma e dispari")
+}
+
+  
+
 
 
 
