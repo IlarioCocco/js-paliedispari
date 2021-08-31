@@ -4,11 +4,25 @@
 // L’utente sceglie pari o dispari e inserisce un numero da 1 a 5.
 // 2 promt per scgliere se pari o dispari 
 // 2a inseerimnento numero da 1 a 5
+var numeriPari = prompt("inserisci numero pari")
+for ( var i = 0; i < 6; i++){
+    if (i % 2 == 0) {
+    console.log("numeri pari :" + " " + i);
+}
+}
 
+var numeriPari = prompt("inserisci numero pari")
+for (var i = 0; i < 6; i++) {
+    if (i % 2 == 1) {
+        console.log("numeri dispari :" + " " + i);
+    }
+}
 
 
 // Generiamo un numero random(sempre da 1 a 5) per il computer(usando una funzione).
 // getSelection. numero randomico da 1 a 5
+var numeroCpuRandomico = Math.floor(Math.random() * 5) + 1;
+console.log("numeri cpu :" + " " + numeroCpuRandomico);
 
 
 
